@@ -1,0 +1,29 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["eslint:recommended", "prettier"],
+  "globals": {
+    "chrome": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jquery": true,
+    "es6": true,
+    "commonjs": true
+  },
+  "rules": {
+    "prettier/prettier": [
+      "off",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true
+      }
+    ],
+    "no-console": "off"
+  },
+  "plugins": ["jquery", "babel", "prettier", "import"]
+}
