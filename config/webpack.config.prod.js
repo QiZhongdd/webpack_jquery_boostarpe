@@ -18,7 +18,6 @@ module.exports = webpackMerge(webpackBase, {
     new CleanWebpackPlugin(["dist"]), //在构建之前清理dist文件
     new webpack.HashedModuleIdsPlugin() //此插件将导致散列基于模块的相对路径，生成四个字符的字符串作为模块ID。建议用于生产。]。
   ],
-
   //webpack的优化组合
   optimization: {
     //优化持久化缓存的, runtime 指的是 webpack 的运行环境(具体作用就是模块解析, 加载) 和 模块信息清单,
